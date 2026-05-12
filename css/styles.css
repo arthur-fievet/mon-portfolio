@@ -12750,15 +12750,14 @@ p {
 }
 
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  background: radial-gradient(circle at center, #112240 0%, #0a192f 50%, #020c1b 100%);
 }
 
 header.masthead .masthead-subheading {
@@ -12779,8 +12778,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    min-height: 100vh;
   }
 
   header.masthead .masthead-subheading {
