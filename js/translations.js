@@ -20,6 +20,8 @@ const T = {
     "m1-text": "Bonjour, je m'appelle Arthur Fievet, j'ai 18 ans, j'habite dans le secteur de Douai dans le Nord (59) et je suis actuellement en première année de BUT Réseaux & Télécommunications à l'IUT de Béthune.",
     "m1-close": "Fermer la présentation",
     "m2-sub": "Étudiant en B.U.T. Réseaux Informatiques & Télécommunications",
+    "m2-profile-title": "Profil",
+    "m2-profile-text": "Étudiant de première année en Réseaux et Télécommunications, je développe de solides compétences dans les réseaux, les protocoles de communication et la sécurité informatique. Motivé et curieux, je recherche un stage à l'étranger pour appliquer mes connaissances techniques et acquérir une expérience professionnelle internationale.",
     "m2-exp": "Expériences",
     "m2-j1t": "Adjoint technique territorial",
     "m2-j1c": "Ville de Douai",
@@ -40,10 +42,22 @@ const T = {
     "m2-e3d": "Juillet 2024",
     "m2-cert": "Certifications",
     "m2-pix": "Compétences numériques certifiées (Mars 2025)",
+    "m2-ccna": "CCNA : Switching, Routing, and Wireless Essentials (SRWE) - En cours",
     "m2-soft": "Savoir-être",
-    "m2-sk1": "Rigueur",
-    "m2-sk2": "Autonomie",
+    "m2-sk1": "Travailleur",
+    "m2-sk2": "Autonome",
     "m2-sk3": "Esprit d'équipe",
+    "m2-skills-title": "Compétences",
+    "m2-sk-ip": "Réseaux IP",
+    "m2-sk-lan": "Config. LAN/VLAN",
+    "m2-lang-title": "Langues",
+    "m2-lang-fr": "<i class=\"fas fa-comment me-2 text-primary\"></i>Français : Langue maternelle",
+    "m2-lang-en": "<i class=\"fas fa-comment me-2 text-primary\"></i>Anglais : Niveau A2",
+    "m2-interests-title": "Centres d'intérêt",
+    "m2-interest-it": "Informatique",
+    "m2-interest-sports": "Sports",
+    "m2-interest-music": "Musique",
+    "m2-interest-travel": "Voyages",
     "m2-dl": "Télécharger mon CV (PDF)",
     "m2-close": "Fermer mon CV",
     "m3-title": "Mon Portfolio",
@@ -129,30 +143,44 @@ const T = {
     "m1-text": "Hello, my name is Arthur Fievet. I am 18 years old. I live near Douai in northern France. I am in my first year of a BUT in Networks & Telecommunications at IUT de Béthune.",
     "m1-close": "Close",
     "m2-sub": "Student in B.U.T. Networks & Telecommunications",
+    "m2-profile-title": "Profile",
+    "m2-profile-text": "First-year Computer Networks and Telecommunications student, I am building solid skills in network systems, communication protocols and IT security. Motivated and curious, I am seeking an internship abroad to apply my technical knowledge and gain international professional experience.",
     "m2-exp": "Experience",
     "m2-j1t": "Technical Assistant",
     "m2-j1c": "City of Douai",
-    "m2-j1d": "July-August 2024 & 2025",
-    "m2-j1p": "Maintenance of water facilities. Strict use of hygiene and public safety rules. Welcome and advice to users.",
+    "m2-j1d": "July–August 2024 & July–August 2025",
+    "m2-j1p": "Maintenance of aquatic infrastructures. Strict compliance with hygiene and public safety standards. Customer reception and assistance.",
     "m2-j2t": "Observation Internship",
     "m2-j2c": "Alstom Petite-Forêt",
     "m2-j2d": "January 2022",
-    "m2-j2p": "Discovery of the rail industry and high-tech production processes.",
+    "m2-j2p": "Introduction to the railway industrial environment and high-technology production processes.",
     "m2-edu": "Education",
     "m2-e1": "B.U.T. Networks & Telecommunications",
-    "m2-e1d": "2025 - Present",
-    "m2-e2": "French Baccalaureate – Science (Maths / Physics-Chemistry)",
-    "m2-e2p": "Lycée Jean-Baptiste Corot, Douai",
+    "m2-e1d": "2025 – Present",
+    "m2-e2": "General Baccalaureate",
+    "m2-e2p": "High school Jean-Baptiste Corot, Douai | Maths / Physics-Chemistry",
     "m2-e2d": "July 2025",
     "m2-e2m": "Good mention",
     "m2-e3": "French Oral Baccalaureate",
     "m2-e3d": "July 2024",
     "m2-cert": "Certifications",
     "m2-pix": "Certified digital skills (March 2025)",
+    "m2-ccna": "CCNA: Switching, Routing, and Wireless Essentials (SRWE) - In progress",
     "m2-soft": "Soft skills",
-    "m2-sk1": "Rigorous",
+    "m2-sk1": "Hard-working",
     "m2-sk2": "Independent",
-    "m2-sk3": "Team spirit",
+    "m2-sk3": "Team player",
+    "m2-skills-title": "Skills",
+    "m2-sk-ip": "IP Networks",
+    "m2-sk-lan": "LAN/VLAN Config.",
+    "m2-lang-title": "Languages",
+    "m2-lang-fr": "<i class=\"fas fa-comment me-2 text-primary\"></i>French: mother tongue",
+    "m2-lang-en": "<i class=\"fas fa-comment me-2 text-primary\"></i>English: A2 level",
+    "m2-interests-title": "Interests",
+    "m2-interest-it": "IT / Computing",
+    "m2-interest-sports": "Sports",
+    "m2-interest-music": "Music",
+    "m2-interest-travel": "Traveling",
     "m2-dl": "Download my CV (PDF)",
     "m2-close": "Close my CV",
     "m3-title": "My Portfolio",
@@ -214,7 +242,6 @@ const T = {
     "m4-li2": "Based on the \"Agency\" theme by StartBootstrap",
     "m4-li3": "Font Awesome & Lucide Icons",
     "m4-li4": "Google Fonts (Montserrat & Roboto Slab)",
-    "m4-li5": "Flaticon",
     "m4-li6": "Home photo: Islean",
   }
 };
@@ -241,14 +268,32 @@ const SEL = {
   "m1-text":     "#portfolioModal1 .modal-body > p:not(.item-intro)",
   "m1-close":    "#portfolioModal1 .btn[data-bs-dismiss='modal']",
   "m2-sub":      "#portfolioModal2 .item-intro",
-  "m2-exp":      "#portfolioModal2 h4:nth-of-type(1)",
-  "m2-j1d":      "#portfolioModal2 .border-start:nth-child(1) small",
-  "m2-j1p":      "#portfolioModal2 .border-start:nth-child(1) p",
-  "m2-j2d":      "#portfolioModal2 .border-start:nth-child(2) small",
-  "m2-j2p":      "#portfolioModal2 .border-start:nth-child(2) p",
-  "m2-cert":     "#portfolioModal2 .col-md-4 h4:nth-of-type(1)",
-  "m2-pix":      "#portfolioModal2 .col-md-4 .small",
-  "m2-soft":     "#portfolioModal2 .col-md-4 h4:nth-of-type(2)",
+  "m2-profile-title": "#cv-profile-title",
+  "m2-profile-text":  "#cv-profile-text",
+  "m2-exp":      "#cv-exp-title",
+  "m2-edu":      "#cv-edu-title",
+  "m2-j1d":      "#cv-exp-j1 small",
+  "m2-j1p":      "#cv-exp-j1 p",
+  "m2-j2d":      "#cv-exp-j2 small",
+  "m2-j2p":      "#cv-exp-j2 p",
+  "m2-cert":     "#cv-cert-title",
+  "m2-pix":      "#cv-cert-pix",
+  "m2-ccna":     "#cv-cert-ccna",
+  "m2-soft":     "#cv-soft-title",
+  "m2-sk1":      "#cv-soft-sk1",
+  "m2-sk2":      "#cv-soft-sk2",
+  "m2-sk3":      "#cv-soft-sk3",
+  "m2-skills-title": "#cv-skills-title",
+  "m2-sk-ip":    "#cv-sk-ip",
+  "m2-sk-lan":   "#cv-sk-lan",
+  "m2-lang-title": "#cv-lang-title",
+  "m2-lang-fr":  "#cv-lang-fr",
+  "m2-lang-en":  "#cv-lang-en",
+  "m2-interests-title": "#cv-interests-title",
+  "m2-interest-it": "#cv-interest-it",
+  "m2-interest-sports": "#cv-interest-sports",
+  "m2-interest-music": "#cv-interest-music",
+  "m2-interest-travel": "#cv-interest-travel",
   "m2-dl":       "#portfolioModal2 .btn-success",
   "m2-close":    "#portfolioModal2 .btn-primary[data-bs-dismiss='modal']",
   "m3-title":    "#portfolioModal3 .section-heading",
@@ -272,19 +317,6 @@ const SEL = {
   "m4-h3-3":     "#portfolioModal4 .text-start > h3:nth-child(5)",
 };
 
-// For elements needing targeted text-node updates (mixed content):
-const TEXT_NODES = {
-  "m2-j1t": { sel: "#portfolioModal2 .border-start:nth-child(1) h5", childIdx: 0 },
-  "m2-j2t": { sel: "#portfolioModal2 .border-start:nth-child(2) h5", childIdx: 0 },
-  "m2-edu":  { sel: "#portfolioModal2 h4:nth-of-type(2)", childIdx: 2 },
-  "m2-e1":   { sel: "#portfolioModal2 .mb-3:nth-of-type(1) h6", childIdx: 0 },
-  "m2-e2":   { sel: "#portfolioModal2 .mb-3:nth-of-type(2) h6", childIdx: 0 },
-  "m2-e3":   { sel: "#portfolioModal2 .mb-3:nth-of-type(3) h6", childIdx: 0 },
-  "m2-sk1":  { sel: "#portfolioModal2 .badge:nth-of-type(1)" },
-  "m2-sk2":  { sel: "#portfolioModal2 .badge:nth-of-type(2)" },
-  "m2-sk3":  { sel: "#portfolioModal2 .badge:nth-of-type(3)" },
-};
-
 function applyLang(lang) {
   const t = T[lang];
 
@@ -296,7 +328,7 @@ function applyLang(lang) {
 
   // Complex text node updates
   if (t["m2-j1t"]) {
-    const el = document.querySelector("#portfolioModal2 .border-start:nth-child(1) h5");
+    const el = document.querySelector("#cv-exp-j1 h5");
     if (el) {
       const sp = el.querySelector("span");
       el.childNodes[0].textContent = t["m2-j1t"] + " ";
@@ -304,7 +336,7 @@ function applyLang(lang) {
     }
   }
   if (t["m2-j2t"]) {
-    const el = document.querySelector("#portfolioModal2 .border-start:nth-child(2) h5");
+    const el = document.querySelector("#cv-exp-j2 h5");
     if (el) {
       const sp = el.querySelector("span");
       el.childNodes[0].textContent = t["m2-j2t"] + " ";
