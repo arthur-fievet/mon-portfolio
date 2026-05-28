@@ -83,12 +83,7 @@ const T = {
     "mt3-s1": "Savoir extraire des données d'un site",
     "mt3-s2": "Apprendre le langage PHP",
     "mt3-s3": "Savoir réaliser un diagramme de Gant",
-    "mt4-title": "Vous pouvez découvrir ici mon projet de SAÉ",
-    "mt4-lead": "Cet écrit réflexif me permet de faire le point sur mes compétences acquises durant ma formation en BUT Réseaux & Télécommunications.",
-    "mt4-text": "Dans cet écrit, je présente une analyse de mon parcours, mes apprentissages et mon développement professionnel.",
-    "mt4-lbl": "Voici le lien de mon écrit réflexif :",
-    "mt4-close": "Fermer la présentation",
-    "proj4-lbl": "Ecrit réflexif",
+
     "admin-title": "Administrer",
     "admin-level": "Niveau 1 — Assister l'administrateur du réseau",
     "connect-title": "Connecter",
@@ -206,12 +201,7 @@ const T = {
     "mt3-s1": "Know how to get data from a website",
     "mt3-s2": "Learn the PHP language",
     "mt3-s3": "Know how to make a Gantt chart",
-    "mt4-title": "Discover my SAÉ project here",
-    "mt4-lead": "This reflective essay helps me review the skills I learned during my BUT Networks & Telecommunications course.",
-    "mt4-text": "In this essay, I present an analysis of my path, my learning and my professional growth.",
-    "mt4-lbl": "Here is the link to my reflective essay:",
-    "mt4-close": "Close",
-    "proj4-lbl": "Reflective essay",
+
     "admin-title": "Administrate",
     "admin-level": "Level 1 — Help the network administrator",
     "connect-title": "Connect",
@@ -309,9 +299,7 @@ const SEL = {
   "mt2-title":   "#modalTexte2 h2",
   "mt2-close":   "#modalTexte2 .btn[data-bs-dismiss='modal']",
   "mt3-title":   "#modalTexte3 h2",
-  "mt4-title":   "#modalTexte4 h2",
-  "mt4-lead":    "#modalTexte4 .lead",
-  "mt4-close":   "#modalTexte4 .btn[data-bs-dismiss='modal']",
+
   "m4-h3-1":     "#portfolioModal4 .text-start > h3:nth-child(1)",
   "m4-h3-2":     "#portfolioModal4 .text-start > h3:nth-child(3)",
   "m4-h3-3":     "#portfolioModal4 .text-start > h3:nth-child(5)",
@@ -391,18 +379,13 @@ function applyLang(lang) {
   if (mt3li[1] && t["mt3-s2"]) mt3li[1].textContent = t["mt3-s2"];
   if (mt3li[2] && t["mt3-s3"]) mt3li[2].textContent = t["mt3-s3"];
 
-  // modalTexte4 text p
-  const mt4p = document.querySelectorAll("#modalTexte4 p");
-  if (mt4p[1] && t["mt4-text"]) mt4p[1].textContent = t["mt4-text"];
-  if (mt4p[2] && t["mt4-lbl"]) mt4p[2].textContent = t["mt4-lbl"];
+
 
   // modalTexte1 lbl p and link
   const mt1p = document.querySelectorAll("#modalTexte1 p");
   if (mt1p[0] && t["mt1-lbl"]) mt1p[0].textContent = t["mt1-lbl"];
 
-  // Proj4 label
-  const proj4p = document.querySelector(".portfolio-caption p.text-muted");
-  if (proj4p && t["proj4-lbl"]) proj4p.textContent = t["proj4-lbl"];
+
 
   // Modal 3 - section headings
   const m3h3s = document.querySelectorAll("#portfolioModal3 h3.text-uppercase");

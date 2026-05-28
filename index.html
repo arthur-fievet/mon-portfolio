@@ -433,17 +433,21 @@
                                             <div class="modal-body">
                                                 <div class="text-center mb-5">
                                                     <h2 class="section-heading text-uppercase">Mon Portfolio</h2>
-                                                    <h3 class="section-subheading text-muted">Cliquez sur chaque projet
-                                                        pour en savoir plus.</h3>
+                                                    <h3 class="section-subheading text-muted">Cliquez sur chaque projet pour en savoir plus.</h3>
                                                 </div>
-
-                                                <style>
+                                                                                                        <style>
                                                     .ac-list li {
                                                         display: flex;
                                                         align-items: flex-start;
-                                                        gap: 0.4rem;
+                                                        gap: 0.5rem;
                                                         margin-bottom: 0.6rem;
                                                         text-align: left;
+                                                        border-radius: 8px;
+                                                        padding: 0.4rem 0.6rem;
+                                                        transition: background-color 0.2s ease;
+                                                    }
+                                                    .ac-list li:hover {
+                                                        background-color: #f8f9fa;
                                                     }
 
                                                     .ac-list .tiret {
@@ -457,9 +461,16 @@
                                                         margin-top: 2px;
                                                     }
 
-                                                    .ac-list span:not(.tiret):not(.badge-ac) {
+                                                    .ac-list .ac-desc {
                                                         flex: 1;
                                                         text-align: left;
+                                                        margin-right: 0.5rem;
+                                                    }
+                                                    
+                                                    .ac-list .badge-details {
+                                                        flex-shrink: 0;
+                                                        white-space: nowrap;
+                                                        margin-top: 2px;
                                                     }
                                                 </style>
 
@@ -476,38 +487,13 @@
                                                         <h5 class="fw-bold text-primary mb-3">Niveau 1 — Assister
                                                             l'administrateur du réseau</h5>
                                                         <ul class="list-unstyled ac-list">
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.01</span><span>Maîtriser
-                                                                    les lois fondamentales de l'électricité afin
-                                                                    d'intervenir sur des équipements de réseaux et
-                                                                    télécommunications</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.02</span><span>Comprendre
-                                                                    l'architecture et les fondements des systèmes
-                                                                    numériques, les principes du codage de
-                                                                    l'information, des communications et de
-                                                                    l'Internet</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.03</span><span>Configurer
-                                                                    les fonctions de base du réseau local</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.04</span><span>Maîtriser
-                                                                    les rôles et les principes fondamentaux des systèmes
-                                                                    d'exploitation afin d'interagir avec ceux-ci pour la
-                                                                    configuration et l'administration des réseaux et
-                                                                    services fournis</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.05</span><span>Identifier
-                                                                    les dysfonctionnements du réseau local et savoir les
-                                                                    signaler</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC11.06</span><span>Installer
-                                                                    un poste client, expliquer la procédure mise en
-                                                                    place</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1101')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.01</span><span class="ac-desc">Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1102')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.02</span><span class="ac-desc">Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1103')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.03</span><span class="ac-desc">Configurer les fonctions de base du réseau local</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1104')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.04</span><span class="ac-desc">Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1105')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.05</span><span class="ac-desc">Identifier les dysfonctionnements du réseau local et savoir les signaler</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1106')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC11.06</span><span class="ac-desc">Installer un poste client, expliquer la procédure mise en place</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
                                                         </ul>
-                                                        <p class="text-muted fst-italic mt-1"><i
-                                                                class="fas fa-info-circle me-1"></i>Aucun projet associé
-                                                            pour le moment.</p>
                                                     </div>
                                                 </div>
 
@@ -526,33 +512,11 @@
                                                         <h5 class="fw-bold text-primary mb-3">Niveau 1 — Découvrir les
                                                             transmissions et la ToIP</h5>
                                                         <ul class="list-unstyled ac-list">
-                                                            <li><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC12.01</span><span>Mesurer,
-                                                                    analyser et commenter les
-                                                                    signaux</span><span>→</span><a href="#modalTexte1"
-                                                                    data-bs-toggle="modal" data-bs-dismiss="modal"
-                                                                    class="badge bg-primary text-decoration-none">Projet
-                                                                    1</a></li>
-                                                            <li><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC12.02</span><span>Caractériser
-                                                                    des systèmes de transmissions élémentaires et
-                                                                    découvrir la modélisation mathématique de leur
-                                                                    fonctionnement</span><span>→</span><a
-                                                                    href="#modalTexte1" data-bs-toggle="modal"
-                                                                    data-bs-dismiss="modal"
-                                                                    class="badge bg-primary text-decoration-none">Projet
-                                                                    1</a></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC12.03</span><span>Déployer
-                                                                    des supports de transmission</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC12.04</span><span>Connecter
-                                                                    les systèmes de ToIP</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC12.05</span><span>Communiquer
-                                                                    avec un tiers (client, collaborateur...) et adapter
-                                                                    son discours et sa langue à son interlocuteur</span>
-                                                            </li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1201')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC12.01</span><span class="ac-desc">Mesurer, analyser et commenter les signaux</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1202')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC12.02</span><span class="ac-desc">Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1203')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC12.03</span><span class="ac-desc">Déployer des supports de transmission</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1204')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC12.04</span><span class="ac-desc">Connecter les systèmes de ToIP</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1205')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC12.05</span><span class="ac-desc">Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -572,64 +536,17 @@
                                                         <h5 class="fw-bold text-primary mb-3">Niveau 1 — S'intégrer dans
                                                             un service informatique</h5>
                                                         <ul class="list-unstyled ac-list">
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.01</span><span>Utiliser
-                                                                    un système informatique et ses outils</span></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.02</span><span>Lire,
-                                                                    exécuter, corriger et modifier un programme</span>
-                                                            </li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.03</span><span>Traduire
-                                                                    un algorithme, dans un langage et pour un
-                                                                    environnement donné</span></li>
-                                                            <li><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.04</span><span>Connaître
-                                                                    l'architecture et les technologies d'un site
-                                                                    Web</span><span>→</span><a href="#modalTexte2"
-                                                                    data-bs-toggle="modal" data-bs-dismiss="modal"
-                                                                    class="badge bg-primary text-decoration-none">Projet
-                                                                    2</a></li>
-                                                            <li><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.05</span><span>Choisir
-                                                                    les mécanismes de gestion de données adaptés au
-                                                                    développement de l'outil et argumenter ses
-                                                                    choix</span><span>→</span><a href="#modalTexte3"
-                                                                    data-bs-toggle="modal" data-bs-dismiss="modal"
-                                                                    class="badge bg-primary text-decoration-none">Projet
-                                                                    3</a></li>
-                                                            <li class="text-muted"><span class="tiret">—</span><span
-                                                                    class="badge bg-secondary badge-ac">AC13.06</span><span>S'intégrer
-                                                                    dans un environnement propice au développement et au
-                                                                    travail collaboratif</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1301')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.01</span><span class="ac-desc">Utiliser un système informatique et ses outils</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1302')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.02</span><span class="ac-desc">Lire, exécuter, corriger et modifier un programme</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1303')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.03</span><span class="ac-desc">Traduire un algorithme, dans un langage et pour un environnement donné</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1304')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.04</span><span class="ac-desc">Connaître l'architecture et les technologies d'un site Web</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1305')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.05</span><span class="ac-desc">Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
+                                                            <li style="cursor:pointer" onclick="showACDetail('AC1306')"><span class="tiret">—</span><span class="badge bg-secondary badge-ac">AC13.06</span><span class="ac-desc">S'intégrer dans un environnement propice au développement et au travail collaboratif</span><span class="text-muted mx-1">→</span><span class="badge bg-success badge-details text-decoration-none">Détails</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
-                                                <hr class="my-4">
 
-                                                <!-- ÉCRIT RÉFLEXIF -->
-                                                <div class="mb-4">
-                                                    <div class="row ms-3">
-                                                        <div class="col-lg-4 col-sm-6 mb-4">
-                                                            <div class="portfolio-item">
-                                                                <a class="portfolio-link" data-bs-toggle="modal"
-                                                                    href="#modalTexte4">
-                                                                    <div class="portfolio-hover">
-                                                                        <div class="portfolio-hover-content"><i
-                                                                                class="fas fa-book fa-3x"></i></div>
-                                                                    </div>
-                                                                    <img class="img-fluid" src="assets/img/saem.png"
-                                                                        alt="Écrit réflexif" />
-                                                                </a>
-                                                                <div class="portfolio-caption">
-                                                                    <h4>Projet 4</h4>
-                                                                    <p class="text-muted">Ecrit réflexif</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
                                                 <div class="text-center mt-3">
                                                     <button class="btn btn-primary btn-xl text-uppercase"
@@ -804,36 +721,33 @@
                         </div>
                     </div>
 
-                    <div class="portfolio-modal modal fade" id="modalTexte4" tabindex="-1" role="dialog"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="close-modal" data-bs-dismiss="modal"
-                                    style="position:absolute; right:25px; top:25px; cursor:pointer;"><img
-                                        src="assets/img/close-icon.svg" width="25"></div>
-                                <div class="modal-body modal-body-custom">
-                                    <h2 class="text-uppercase text-center mb-4">Vous pouvez découvrir ici mon projet de
-                                        SAÉ</h2>
-                                    <p class="lead">Cet écrit réflexif me permet de faire le point sur mes compétences
-                                        acquises durant ma formation en BUT Réseaux & Télécommunications.</p>
-                                    <p>Dans cet écrit, je présente une analyse de mon parcours, mes apprentissages et
-                                        mon développement professionnel.</p>
-                                    <p>Voici le lien de mon écrit réflexif :</p>
-                                    <a href="pdf/écrit_réflexif.pdf" target="_blank">Mon écrit réflexif</a>
-                                </div>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Fermer la présentation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <script>
                         // Met à jour l'année automatiquement
                         // document.getElementById('year').textContent = new Date().getFullYear();
                     </script>
+                    <!-- AC Detail Modal -->
+                    <div class="portfolio-modal modal fade" id="acDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content" style="border-radius:20px;border:none;text-align:left;padding-top:2.5rem;padding-bottom:2.5rem">
+                                <div class="close-modal" data-bs-dismiss="modal" style="position:absolute;right:25px;top:25px;cursor:pointer;z-index:10"><img src="assets/img/close-icon.svg" width="25"></div>
+                                <div class="modal-body" style="padding:2.5rem">
+                                    <div class="mb-4">
+                                        <span class="badge bg-primary fs-5 mb-2 ac-code"></span>
+                                        <h4 class="text-uppercase fw-bold ac-title" style="color: #212529; line-height: 1.3;"></h4>
+                                    </div>
+                                    <hr>
+                                    <div class="ac-body-content"></div>
+                                </div>
+                                <div class="text-center pb-4">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i>Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="js/ac-data.js?v=1.2"></script>
                     <script src="js/translations.js"></script>
 </body>
 
