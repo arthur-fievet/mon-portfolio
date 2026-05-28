@@ -81,7 +81,7 @@ const AC_DATA = {
     title: "Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement",
     fait: "À travers la SAE1.03 (Découvrir un dispositif de transmission), les cours R1.05 (Supports de transmission), R1.13 (Mathématiques du signal) et R1.14 (Mathématiques des transmissions), j'ai caractérisé des systèmes de transmission : étude des supports (câble cuivre, fibre optique, transmission sans fil), modélisation de leur comportement en fréquence, calcul de bande passante et d'atténuation.",
     pourquoi: "Comprendre les systèmes de transmission est essentiel pour choisir le bon support selon les besoins (débit, distance, environnement). La modélisation mathématique permet de quantifier les performances et d'anticiper les limites des supports.",
-    comment: "J'ai utilisé les cours de R1.05 (câbles, fibres, ondes radio) pour la théorie, et R2.05 (Signaux et systèmes pour les transmissions) en S2 pour approfondir la modélisation. Les outils mathématiques des ressources R1.13 et R1.14 (transformées de Fourier, filtres) m'ont permis de modéliser le comportement des systèmes de transmission.",
+    comment: "J'ai utilisé les cours de R1.05 (câbles, fibres, ondes radio) pour la théorie, et R2.05 (Signaux et systèmes pour les transmissions) en S2 pour approfondir la modélisation. Les outils mathématiques des ressources R1.13 et R1.14 m'ont permis de modéliser le comportement des systèmes de transmission.",
     difficultes: "La représentation mathématique des systèmes de transmission (fonctions de transfert, diagrammes de Bode) a été difficile à maîtriser.",
     appris: "Je comprends les caractéristiques des principaux supports de transmission (câble UTP, fibre optique, Wi-Fi) et leurs limites en termes de bande passante et d'atténuation.",
     autrement: "Je commencerais par des exemples concrets (mesure sur un vrai câble). Je mettrais les cours de mathématiques et les TPs de transmission en application dès le début pour faire le lien entre théorie et pratique.",
@@ -195,16 +195,16 @@ function showACDetail(acId) {
   const m = document.getElementById('acDetailModal');
   m.querySelector('.ac-code').textContent = d.code;
   m.querySelector('.ac-title').textContent = d.title;
-  
+
   const sections = [
-    {key:'fait', icon:'fa-tasks', label:'Ce que j\'ai fait'},
-    {key:'pourquoi', icon:'fa-question-circle', label:'Pourquoi je l\'ai fait'},
-    {key:'comment', icon:'fa-cogs', label:'Comment je l\'ai fait'},
-    {key:'difficultes', icon:'fa-exclamation-triangle', label:'Mes difficultés'},
-    {key:'appris', icon:'fa-lightbulb', label:'Ce que j\'en ai appris'},
-    {key:'autrement', icon:'fa-redo', label:'Ce que je ferais autrement'},
+    { key: 'fait', icon: 'fa-tasks', label: 'Ce que j\'ai fait' },
+    { key: 'pourquoi', icon: 'fa-question-circle', label: 'Pourquoi je l\'ai fait' },
+    { key: 'comment', icon: 'fa-cogs', label: 'Comment je l\'ai fait' },
+    { key: 'difficultes', icon: 'fa-exclamation-triangle', label: 'Mes difficultés' },
+    { key: 'appris', icon: 'fa-lightbulb', label: 'Ce que j\'en ai appris' },
+    { key: 'autrement', icon: 'fa-redo', label: 'Ce que je ferais autrement' },
   ];
-  
+
   let html = '';
   sections.forEach(s => {
     if (d[s.key]) {
@@ -214,23 +214,23 @@ function showACDetail(acId) {
       </div>`;
     }
   });
-  
+
   if (d.preuve) {
     html += `<div class="mb-3 p-3 bg-light rounded" style="text-align:left">
       <h6 class="fw-bold"><i class="fas fa-folder-open me-2 text-success"></i>Preuve</h6>
       <div class="text-center mt-2">${d.preuve}</div>
     </div>`;
   }
-  
+
   m.querySelector('.ac-body-content').innerHTML = html;
-  
+
   // Prevent click propagation on links (PDF buttons, etc.) inside the modal
   m.querySelectorAll('.ac-body-content a').forEach(link => {
     link.addEventListener('click', (e) => {
       e.stopPropagation();
     });
   });
-  
+
   // Cleanly close parent modal and open AC detail modal
   const portfolioEl = document.getElementById('portfolioModal3');
   const parentModal = bootstrap.Modal.getInstance(portfolioEl);
