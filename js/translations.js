@@ -3,7 +3,7 @@ const T = {
     "nav-home": "Accueil",
     "nav-portfolio": "Présentation personnelle / CV / Portfolio",
     "masthead-sub": "Étudiant en Réseaux et Télécommunications",
-    "masthead-info": "| 18 ANS | ÉTUDIANT BUT R&T - 1ÈRE ANNÉE |",
+    "masthead-info": "| 18 ANS | ÉTUDIANT BUT R&T - 2ÈME ANNÉE |",
     "masthead-btn": "Pour en savoir plus",
     "s1-title": "Accueil",
     "s1-sub": "Ci-dessous, les différentes informations que vous pourrez découvrir sur moi.",
@@ -17,11 +17,11 @@ const T = {
     "pc4": "Crédits & Mentions",
     "m1-title": "Présentation personnelle",
     "m1-intro": "Voici une courte présentation",
-    "m1-text": "Bonjour, je m'appelle Arthur Fievet, j'ai 18 ans, j'habite dans le secteur de Douai dans le Nord (59) et je suis actuellement en première année de BUT Réseaux & Télécommunications à l'IUT de Béthune.",
+    "m1-text": "Bonjour, je m'appelle Arthur Fievet, j'ai 18 ans, j'habite dans le secteur de Douai dans le Nord (59) et je suis actuellement en deuxième année de BUT Réseaux & Télécommunications à l'IUT de Béthune.",
     "m1-close": "Fermer la présentation",
     "m2-sub": "Étudiant en B.U.T. Réseaux Informatiques & Télécommunications",
     "m2-profile-title": "Profil",
-    "m2-profile-text": "Étudiant de première année en Réseaux et Télécommunications, je développe de solides compétences dans les réseaux, les protocoles de communication et la sécurité informatique. Motivé et curieux, je recherche un stage à l'étranger pour appliquer mes connaissances techniques et acquérir une expérience professionnelle internationale.",
+    "m2-profile-text": "Étudiant de deuxième année en Réseaux et Télécommunications, je développe de solides compétences dans les réseaux, les protocoles de communication et la sécurité informatique. Motivé et curieux, je recherche un stage à l'étranger pour appliquer mes connaissances techniques et acquérir une expérience professionnelle internationale.",
     "m2-exp": "Expériences",
     "m2-j1t": "Adjoint technique territorial",
     "m2-j1c": "Ville de Douai",
@@ -86,10 +86,20 @@ const T = {
 
     "admin-title": "Administrer",
     "admin-level": "Niveau 1 — Assister l'administrateur du réseau",
+    "admin-level-1": "Niveau 1 — Assister l'administrateur du réseau",
+    "admin-level-2": "Niveau 2 — Administrer un réseau",
     "connect-title": "Connecter",
     "connect-level": "Niveau 1 — Découvrir les transmissions et la ToIP",
+    "connect-level-1": "Niveau 1 — Découvrir les transmissions et la ToIP",
+    "connect-level-2": "Niveau 2 — Maîtriser les différentes composantes des solutions de connexion des entreprises et des usagers",
     "prog-title": "Programmer",
     "prog-level": "Niveau 1 — S'intégrer dans un service informatique",
+    "prog-level-1": "Niveau 1 — S'intégrer dans un service informatique",
+    "prog-level-2": "Niveau 2 — Développer une application R&T",
+    "secu-title": "Sécuriser",
+    "secu-level-1": "Niveau 1 — Sensibiliser aux vulnérabilités d'un système d'information et aux remédiations possibles",
+    "surv-title": "Surveiller",
+    "surv-level-1": "Niveau 1 — Prendre en main les outils de surveillance et de test du système d'information",
     "no-project": "Aucun projet associé pour le moment.",
     "ac1101": "Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications",
     "ac1102": "Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet",
@@ -97,17 +107,41 @@ const T = {
     "ac1104": "Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis",
     "ac1105": "Identifier les dysfonctionnements du réseau local et savoir les signaler",
     "ac1106": "Installer un poste client, expliquer la procédure mise en place",
+    "ac2101": "Configurer et dépanner le routage dynamique dans un réseau",
+    "ac2102": "Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau",
+    "ac2103": "Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée",
+    "ac2104": "Déployer des services réseaux avancés",
+    "ac2105": "Identifier les réseaux opérateurs et l'architecture d'Internet",
+    "ac2106": "Travailler en équipe pour développer ses compétences professionnelles",
     "ac1201": "Mesurer, analyser et commenter les signaux",
     "ac1202": "Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement",
     "ac1203": "Déployer des supports de transmission",
     "ac1204": "Connecter les systèmes de ToIP",
     "ac1205": "Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur",
+    "ac2201": "Déployer et caractériser des systèmes de transmissions complexes",
+    "ac2202": "Mettre en place un accès distant sécurisé",
+    "ac2203": "Mettre en place une connexion multi-site via un réseau opérateur",
+    "ac2204": "Déployer des réseaux d'accès des opérateurs",
+    "ac2205": "Capacité à questionner un cahier des charges RT",
     "ac1301": "Utiliser un système informatique et ses outils",
     "ac1302": "Lire, exécuter, corriger et modifier un programme",
     "ac1303": "Traduire un algorithme, dans un langage et pour un environnement donné",
     "ac1304": "Connaître l'architecture et les technologies d'un site Web",
     "ac1305": "Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix",
     "ac1306": "S'intégrer dans un environnement propice au développement et au travail collaboratif",
+    "ac2301": "Automatiser l'administration système avec des scripts",
+    "ac2302": "Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles",
+    "ac2303": "Utiliser un protocole réseau pour programmer une application client/serveur",
+    "ac2304": "Installer, administrer un système de gestion de données",
+    "ac2305": "Accéder à un ensemble de données depuis une application et/ou un site web",
+    "ac2401cyber": "Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité",
+    "ac2402cyber": "Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure du réseau",
+    "ac2403cyber": "Sécuriser les services",
+    "ac2404cyber": "Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d'information",
+    "ac2405cyber": "Connaître les différents types d'attaque",
+    "ac2406cyber": "Comprendre des documents techniques en anglais",
+    "ac2501cyber": "Administrer les protections contre les logiciels malveillants",
+    "ac2502cyber": "Prendre en main des outils de test de pénétration réseau/système",
     "m4-h3-1": "🛠️ Développement",
     "m4-h3-2": "📚 Ressources utilisées",
     "m4-h3-3": "⚖️ Mentions Légales",
@@ -121,7 +155,7 @@ const T = {
     "nav-home": "Home",
     "nav-portfolio": "About me / CV / Portfolio",
     "masthead-sub": "Student in Networks and Telecommunications",
-    "masthead-info": "| 18 YEARS OLD | BUT R&T STUDENT - 1ST YEAR |",
+    "masthead-info": "| 18 YEARS OLD | BUT R&T STUDENT - 2ND YEAR |",
     "masthead-btn": "Learn more",
     "s1-title": "Home",
     "s1-sub": "Below, you can find different information about me.",
@@ -135,11 +169,11 @@ const T = {
     "pc4": "Credits & Legal",
     "m1-title": "About me",
     "m1-intro": "Here is a short presentation",
-    "m1-text": "Hello, my name is Arthur Fievet. I am 18 years old. I live near Douai in northern France. I am in my first year of a BUT in Networks & Telecommunications at IUT de Béthune.",
+    "m1-text": "Hello, my name is Arthur Fievet. I am 18 years old. I live near Douai in northern France. I am in my second year of a BUT in Networks & Telecommunications at IUT de Béthune.",
     "m1-close": "Close",
     "m2-sub": "Student in B.U.T. Networks & Telecommunications",
     "m2-profile-title": "Profile",
-    "m2-profile-text": "First-year Computer Networks and Telecommunications student, I am building solid skills in network systems, communication protocols and IT security. Motivated and curious, I am seeking an internship abroad to apply my technical knowledge and gain international professional experience.",
+    "m2-profile-text": "Second-year Computer Networks and Telecommunications student, I am building solid skills in network systems, communication protocols and IT security. Motivated and curious, I am seeking an internship abroad to apply my technical knowledge and gain international professional experience.",
     "m2-exp": "Experience",
     "m2-j1t": "Technical Assistant",
     "m2-j1c": "City of Douai",
@@ -204,10 +238,20 @@ const T = {
 
     "admin-title": "Administrate",
     "admin-level": "Level 1 — Help the network administrator",
+    "admin-level-1": "Level 1 — Help the network administrator",
+    "admin-level-2": "Level 2 — Administrate a network",
     "connect-title": "Connect",
     "connect-level": "Level 1 — Discover transmissions and VoIP",
+    "connect-level-1": "Level 1 — Discover transmissions and VoIP",
+    "connect-level-2": "Level 2 — Master the different components of enterprise and user connection solutions",
     "prog-title": "Program",
     "prog-level": "Level 1 — Join an IT team",
+    "prog-level-1": "Level 1 — Join an IT team",
+    "prog-level-2": "Level 2 — Develop an R&T application",
+    "secu-title": "Secure",
+    "secu-level-1": "Level 1 — Raise awareness of information system vulnerabilities and possible remediations",
+    "surv-title": "Monitor",
+    "surv-level-1": "Level 1 — Get hands-on experience with information system monitoring and testing tools",
     "no-project": "No project linked for now.",
     "ac1101": "Know the basic laws of electricity to work on network and telecom equipment",
     "ac1102": "Understand the architecture of digital systems, coding of information, communications and the Internet",
@@ -215,17 +259,41 @@ const T = {
     "ac1104": "Know the roles and basics of operating systems to configure and manage networks and services",
     "ac1105": "Find problems in the local network and know how to report them",
     "ac1106": "Install a client computer and explain the steps",
+    "ac2101": "Configure and troubleshoot dynamic routing in a network",
+    "ac2102": "Configure and explain a simple QoS policy and basic network security functions",
+    "ac2103": "Deploy client workstations and virtualized solutions adapted to a given situation",
+    "ac2104": "Deploy advanced network services",
+    "ac2105": "Identify operator networks and Internet architecture",
+    "ac2106": "Work in a team to develop professional skills",
     "ac1201": "Measure, analyse and explain signals",
     "ac1202": "Study basic transmission systems and discover their math model",
     "ac1203": "Deploy transmission media",
     "ac1204": "Connect VoIP systems",
     "ac1205": "Talk with a client or colleague and adapt your language to them",
+    "ac2201": "Deploy and characterize complex transmission systems",
+    "ac2202": "Set up secure remote access",
+    "ac2203": "Set up a multi-site connection via an operator network",
+    "ac2204": "Deploy operator access networks",
+    "ac2205": "Ability to question and evaluate R&T technical specifications",
     "ac1301": "Use a computer system and its tools",
     "ac1302": "Read, run, fix and change a program",
     "ac1303": "Convert an algorithm into a programming language",
     "ac1304": "Know the architecture and technologies of a website",
     "ac1305": "Choose the right data tools for a project and explain your choices",
     "ac1306": "Work in an environment made for development and team work",
+    "ac2301": "Automate system administration with scripts",
+    "ac2302": "Develop an application based on given specifications, for Web or mobile devices",
+    "ac2303": "Use a network protocol to program a client/server application",
+    "ac2304": "Install and administer a data management system",
+    "ac2305": "Access a dataset from an application and/or a website",
+    "ac2401cyber": "Know and use cybersecurity best practices and recommendations",
+    "ac2402cyber": "Implement fundamental tools to secure a network infrastructure",
+    "ac2403cyber": "Secure services",
+    "ac2404cyber": "Choose cryptographic tools adapted to the functional needs of the information system",
+    "ac2405cyber": "Know the different types of attacks",
+    "ac2406cyber": "Understand technical documents in English",
+    "ac2501cyber": "Administer protections against malicious software",
+    "ac2502cyber": "Get hands-on experience with network/system penetration testing tools",
     "m4-h3-1": "🛠️ Development",
     "m4-h3-2": "📚 Resources used",
     "m4-h3-3": "⚖️ Legal Notice",
@@ -307,6 +375,12 @@ const SEL = {
 
 function applyLang(lang) {
   const t = T[lang];
+
+  // data-i18n attribute updates
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
 
   // innerHTML updates
   Object.entries(SEL).forEach(([key, sel]) => {
@@ -392,11 +466,18 @@ function applyLang(lang) {
   if (m3h3s[0] && t["admin-title"])   m3h3s[0].textContent = t["admin-title"];
   if (m3h3s[1] && t["connect-title"]) m3h3s[1].textContent = t["connect-title"];
   if (m3h3s[2] && t["prog-title"])    m3h3s[2].textContent = t["prog-title"];
+  if (m3h3s[3] && t["secu-title"])    m3h3s[3].textContent = t["secu-title"];
+  if (m3h3s[4] && t["surv-title"])    m3h3s[4].textContent = t["surv-title"];
 
   const m3h5s = document.querySelectorAll("#portfolioModal3 h5.fw-bold.text-primary");
-  if (m3h5s[0] && t["admin-level"])   m3h5s[0].textContent = t["admin-level"];
-  if (m3h5s[1] && t["connect-level"]) m3h5s[1].textContent = t["connect-level"];
-  if (m3h5s[2] && t["prog-level"])    m3h5s[2].textContent = t["prog-level"];
+  if (m3h5s[0] && t["admin-level-1"])   m3h5s[0].textContent = t["admin-level-1"];
+  if (m3h5s[1] && t["admin-level-2"])   m3h5s[1].textContent = t["admin-level-2"];
+  if (m3h5s[2] && t["connect-level-1"]) m3h5s[2].textContent = t["connect-level-1"];
+  if (m3h5s[3] && t["connect-level-2"]) m3h5s[3].textContent = t["connect-level-2"];
+  if (m3h5s[4] && t["prog-level-1"])    m3h5s[4].textContent = t["prog-level-1"];
+  if (m3h5s[5] && t["prog-level-2"])    m3h5s[5].textContent = t["prog-level-2"];
+  if (m3h5s[6] && t["secu-level-1"])    m3h5s[6].textContent = t["secu-level-1"];
+  if (m3h5s[7] && t["surv-level-1"])    m3h5s[7].textContent = t["surv-level-1"];
 
   const noProj = document.querySelector("#portfolioModal3 .fst-italic");
   if (noProj && t["no-project"]) noProj.textContent = t["no-project"];
@@ -404,15 +485,25 @@ function applyLang(lang) {
   // Modal 3 - AC descriptions
   const acGroups = [
     ["ac1101","ac1102","ac1103","ac1104","ac1105","ac1106"],
+    ["ac2101","ac2102","ac2103","ac2104","ac2105","ac2106"],
     ["ac1201","ac1202","ac1203","ac1204","ac1205"],
+    ["ac2201","ac2202","ac2203","ac2204","ac2205"],
     ["ac1301","ac1302","ac1303","ac1304","ac1305","ac1306"],
+    ["ac2301","ac2302","ac2303","ac2304","ac2305"],
+    ["ac2401cyber","ac2402cyber","ac2403cyber","ac2404cyber","ac2405cyber","ac2406cyber"],
+    ["ac2501cyber","ac2502cyber"],
   ];
   document.querySelectorAll("#portfolioModal3 .ac-list").forEach((ul, si) => {
     ul.querySelectorAll("li").forEach((li, idx) => {
       const key = acGroups[si]?.[idx];
       if (key && t[key]) {
-        const spans = li.querySelectorAll("span:not(.tiret):not(.badge-ac)");
-        if (spans[0]) spans[0].textContent = t[key];
+        const desc = li.querySelector(".ac-desc");
+        if (desc) {
+          desc.textContent = t[key];
+        } else {
+          const spans = li.querySelectorAll("span:not(.tiret):not(.badge-ac)");
+          if (spans[0]) spans[0].textContent = t[key];
+        }
       }
     });
   });
